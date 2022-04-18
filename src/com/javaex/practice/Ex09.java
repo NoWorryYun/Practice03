@@ -6,7 +6,7 @@ public class Ex09 {
 		// TODO Auto-generated method stub
 		for (int y = 1 ; y<=10 ; y++) {
 			for (int x = 1 ; x <= 10 ; x++) {
-				System.out.print(y + "\t");
+				System.out.print((y-1) + x + "\t");
 			}
 			System.out.println("");
 		}
