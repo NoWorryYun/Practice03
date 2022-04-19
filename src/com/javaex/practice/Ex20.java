@@ -8,38 +8,37 @@ public class Ex20 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int dap = 55;
-		
+
 		System.out.println("================================");
 		System.out.println("\t[숫자맞추기게임 시작]");
 		System.out.println("================================");
-		
-		while(true) {
+
+		while (true) {
 			System.out.print(">>");
 			int num = sc.nextInt();
 			sc.nextLine();
-			if(num == dap) {
+			if (num == dap) {
 				System.out.println("맞았습니다.");
 				System.out.print("게임을 종료하시겠습니까?(y/n) >>");
 				String yes_or_no = sc.nextLine();
-				if(yes_or_no.equals("y")) {
+				if (yes_or_no.equals("y")) {
 					System.out.println("================================");
 					System.out.println("\t[숫자맞추기게임 종료]");
 					System.out.println("================================");
 					break;
-				} else if(yes_or_no.equals("n")) {
-			}
-			}else if(num>dap) {
+				} else if (yes_or_no.equals("n")) {
+					System.out.println("게임이 다시 시작됩니다.");
+				}
+			} else if (num > dap) {
 				System.out.println("더 낮게");
-			}else if(num<dap) {
+			} else if (num < dap) {
 				System.out.println("더 높게");
 			}
-				
+
 		}
-		
-		
-		
+
 		sc.close();
-		
+
 	}
 
 }
