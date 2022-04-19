@@ -29,6 +29,7 @@ public class Ex20 {
 				} else if (yes_or_no.equals("n")) {
 					System.out.println("게임이 다시 시작됩니다.");
 				}
+				
 			} else if (num > dap) {
 				System.out.println("더 낮게");
 			} else if (num < dap) {
